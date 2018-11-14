@@ -6,6 +6,7 @@ body {
     font-family: "Crimson Text", serif;
     background-color: #F2FFFC;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 main {
@@ -24,6 +25,7 @@ main {
     margin: 0px;
     border-bottom: .5rem solid #000;
     text-transform: uppercase;
+    width: 110%;
 }
 
 .conteudo-pagina a {
@@ -59,6 +61,7 @@ p {
     position: absolute;
     top: 0;
     right: 0;
+    width: 10em;
 }
 
 .navegacao-site {
@@ -72,9 +75,11 @@ p {
     box-sizing: border-box;
     border-left: 10px solid;
     border-bottom: 10px solid;
+    border-top: 10px solid;
     border-color: #000;
     position: relative;
-    top: 310px;
+    top: 150px;
+    box-sizing: border-box;
 }
 
 .navegacao-site a {
