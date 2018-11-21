@@ -24,6 +24,7 @@ main {
     margin: 0px;
     border-bottom: .5rem solid #000;
     text-transform: uppercase;
+    text-shadow: 5px 5px #000;
 }
 
 .conteudo-pagina a {
@@ -105,8 +106,8 @@ em {
 }
 
 #rodape-pagina {
-    background-color: #000;
-    color: #F2FFFC;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000;
     padding: 20px;
     clear: both;
     position: fixed;
