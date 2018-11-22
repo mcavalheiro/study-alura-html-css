@@ -15,6 +15,10 @@ main {
     padding-bottom: 80px;
 }
 
+main a:hover {
+    color: red;
+}
+
 .conteudo-pagina h1 {
     font-size: 300%;
     background-color: #851944;
@@ -88,6 +92,10 @@ p {
     text-transform: lowercase;
 }
 
+.navegacao-site a:hover {
+    text-shadow: 0 3px 5px yellow;
+}
+
 .navegacao-site h1 {
     font-size: 30px;
     margin-bottom: 25px;
@@ -126,6 +134,10 @@ em {
                     transparent);
     background-size: 25% 100%;
     background-repeat: no-repeat;
+}
+
+footer a:hover {
+    color: red;
 }
 
 .icones-sociais a {

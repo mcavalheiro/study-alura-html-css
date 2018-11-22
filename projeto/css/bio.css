@@ -7,12 +7,24 @@
     box-sizing: border-box;
 }
 
-.citacao-fiat {
-    float: right
+.citacao-bio:hover, :focus {
+    box-shadow: 0 0 0 99999px rgba(0,0,0,0.8);
 }
 
-.citacao-petrobras {
+.citacao-bio:nth-of-type(odd) {
+    float: right;
+}
+
+.citacao-bio:nth-of-type(odd):hover, :focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.citacao-bio:nth-of-type(even) {
     float: left;
+}
+
+.citacao-bio:nth-of-type(even):hover, :focus {
+    transform: scale(1.2) rotate(-5deg);
 }
 
 cite {
