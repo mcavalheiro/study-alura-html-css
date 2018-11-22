@@ -110,13 +110,22 @@ em {
 }
 
 #rodape-pagina {
-    background-color: rgba(0, 0, 0, 0.3);
+    /*background-color: rgba(0, 0, 0, 0.3);*/
     color: #000;
     padding: 20px;
     clear: both;
     position: fixed;
     width: 100%;
     bottom: 0;
+    background-image: radial-gradient(ellipse at left bottom, 
+                    rgba(239, 77, 245, 0.8),
+                    rgba(239, 77, 245, 0.8) 65%, 
+                    #000 65%,
+                    #000 70%,
+                    transparent 70%,
+                    transparent);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
 }
 
 .icones-sociais a {

@@ -1,6 +1,10 @@
 article {
     padding: 20px;
-    border-bottom: 1px solid #ccc;
+   /* border-bottom: 1px solid #ccc;*/
+    background-image: linear-gradient(to right, transparent, #ccc, transparent);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 .leia-mais {
@@ -10,4 +14,9 @@ article {
     font-size: 1.5em;
     text-align: center;
     background-color: #E6E7E8;
+}
+
+.rodape-text {
+    text-shadow: #000 1px 1px;
+    color: #fff;
 }
