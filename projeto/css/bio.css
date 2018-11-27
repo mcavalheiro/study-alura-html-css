@@ -7,6 +7,18 @@
     box-sizing: border-box;
 }
 
+blockquote::before {
+    content: '"';
+    font-size: 1000%;
+    color: #bbb;
+    position: absolute;
+    line-height: .8;
+}
+
+blockquote > p {
+    position: relative;
+}
+
 .citacao-bio:hover, :focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,0.8);
 }
@@ -30,4 +42,13 @@
 cite {
     float: right;
     font-style: italic;
+}
+
+div > p::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
 }
