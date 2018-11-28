@@ -11,7 +11,7 @@ body {
 
 main {
     float: left;
-    width: 90%;
+    width: calc(100% - 0.9 * 300px);
     padding-bottom: 80px;
 }
 
@@ -30,6 +30,7 @@ main a:hover {
     border-bottom: .5rem solid #000;
     text-transform: uppercase;
     text-shadow: 5px 5px #000;
+    width: 110%;
 }
 
 .conteudo-pagina a {
@@ -75,7 +76,7 @@ p {
     text-align: center;
     float: right;
     clear: right;
-    width: 10%;
+    width: calc(0.9 * 300px);
     box-sizing: border-box;
     border-left: 10px solid;
     border-bottom: 10px solid;

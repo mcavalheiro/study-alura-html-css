@@ -14,28 +14,35 @@
         <main class="conteudo-pagina">
             <h1>Contato</h1>
             <form>
-                <fieldset>
-                    <legend>Seus dados</legend>
-                    <label>Nome:
-                        <input type="text" name="nome-contato" required autofocus pattern="[A-Za-z]{4,}" title="O nome precisa ter pelo menos 4 caracteres.">
-                    </label>
-                    <label>E-mail:
-                        <input type="email" name="email-contato" required placeholder="seu@email.com">
-                    </label>
-                </fieldset>
-
-                <select name="assunto">
-                    <option value="Blog">Blog</option>
-                    <option value="Serviço">Serviço</option>
-                    <option value="Outro">Outro</option>
-                </select>
-
-                <fieldset>
+                    <fieldset>
+                        <legend>Seus dados</legend>
+                        <label for="nome" class="com-icone">Nome completo</label>
+                        <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                        <label for="email" class="com-icone">E-mail</label>
+                        <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <label>
+                            <input type="radio" name="assunto" value="Blog">
+                            Blog
+                        </label>
+                        <label>
+                            <input type="radio" name="assunto" value="Serviço">
+                            Serviço
+                        </label>
+                        <fieldset>
+                            <input type="radio" name="assunto" value="Outro" id="outro">
+                            <label for="outro">
+                                Outro
+                            </label>
+                            <input type="text" name="outro-assunto">
+                        </fieldset>
+                    </fieldset>
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="msg" id="mensagem" cols="60" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+                    <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
                     <button type="submit">Enviar mensagem</button>
-                </fieldset>
-            </form>
+                </form>
             
         </main>
         <img class="minha-foto" src="/projeto/img/eu.jpg" alt="Foto de João da Silva">

@@ -352,5 +352,5 @@ footer p {
     top: 0;
     right: 0;
     transform-origin: 0 0;
-    transform: translate(7.5754em, -3.4749em) rotate(45deg);
+    transform: translate(calc(.707 * (4.5em - 100%) + 100%), calc(-.707 * 4.5em)) rotate(45deg);
 }
