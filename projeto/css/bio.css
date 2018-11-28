@@ -52,3 +52,42 @@ div > p::first-letter {
     margin-right: .2ch;
     line-height: 1;
 }
+
+table {
+    color: inherit;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades th {
+    background-color: #851944;
+    color: #fff;
+    font-weight: bold;
+    border: 10px solid transparent;
+}
+
+.habilidades {
+    background-color: #eee;
+    border-collapse: separate;
+    border-spacing: .25em;
+    margin: 1em 0;
+
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+.habilidades [rowspan] {
+    vertical-align: middle;
+}
