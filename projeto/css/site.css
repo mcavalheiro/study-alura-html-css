@@ -1,17 +1,15 @@
 body {
-    font-size: 100%;
-}
-
-body {
     font-family: "Crimson Text", serif;
+    font-size: 100%;
     background-color: #F2FFFC;
     line-height: 1.5;
     overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
-    float: left;
-    width: calc(100% - 0.9 * 300px);
+    flex-grow: 1;
     padding-bottom: 80px;
 }
 
@@ -58,9 +56,8 @@ p {
 }
 
 .minha-foto {
-    float: right;
     border-left: 10px solid;
-    border-bottom: 10px solid;
+    border-bottom: .5em solid black;
     border-color: #000;
     box-sizing: border-box;
     position: absolute;
@@ -74,17 +71,14 @@ p {
     color: #F2FFFC;
     padding: 20px;
     text-align: center;
-    float: right;
     clear: right;
     width: calc(0.9 * 300px);
     box-sizing: border-box;
     border-left: 10px solid;
-    border-bottom: 10px solid;
     border-top: 10px solid;
     border-color: #000;
-    position: relative;
-    top: 150px;
     box-sizing: border-box;
+    padding-top: calc(300px + 1em);
 }
 
 .navegacao-site a {
