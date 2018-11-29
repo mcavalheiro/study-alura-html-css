@@ -79,6 +79,27 @@ header {
     text-align: right;
     display: block;
 }
+
+.saudacao em {
+    position: relative;
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+
+.saudacao:hover em {
+    animation-play-state: paused;
+}
+
 .saudacao strong {
     color: #000;
     font-size: 2em;
@@ -105,6 +126,15 @@ header {
     margin-bottom: 1em;
     box-shadow: 0 0 1em #000, inset 0 0 .5em #fff;
 }
+
+.botao-index:hover, .botao-index:focus {
+    box-shadow: 0 0 1em #FA9;
+    background-color: #C54974;
+    color: #fff;
+    transition: .5s;
+    text-decoration: none;
+}
+
 .secao-inicio h2 {
     text-transform: uppercase;
     padding: 2rem;
@@ -335,6 +365,13 @@ footer p {
     transform: translate(-50%, 150%) rotate(7deg) translateZ(2px) scale(0.25);
 }
 
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
 .banner-twitter {
     background: #3C1D3D;
     text-align: center;
@@ -353,4 +390,8 @@ footer p {
     right: 0;
     transform-origin: 0 0;
     transform: translate(calc(.707 * (4.5em - 100%) + 100%), calc(-.707 * 4.5em)) rotate(45deg);
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+
 }

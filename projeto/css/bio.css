@@ -1,3 +1,16 @@
+h1 {
+    animation: aparece 2s ease-in;
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
 .conteudo-pagina blockquote {
     background-color: #D9E5E3;
     padding: 1em;
@@ -19,8 +32,27 @@ blockquote > p {
     position: relative;
 }
 
+.citacao-bio {
+    transition: transform 1s linear, box-shadow 1s ease-in;
+    transition-delay: 0s, 1s;
+    animation: quica 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    position: relative;
+}
+
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    to {
+        top: 1em;
+    }
+}
+
 .citacao-bio:hover, :focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,0.8);
+    animation-play-state: paused;
 }
 
 .citacao-bio:nth-of-type(odd) {
